@@ -348,6 +348,22 @@
 	}
 
 	/* ----------------------------------------------------------
+	   Email — assemble from parts so the plaintext address is
+	   never present in the served HTML for scrapers to harvest.
+	   ---------------------------------------------------------- */
+	function initEmail() {
+		var link = $("#emailLink");
+		if (!link) return;
+		var user = link.getAttribute("data-user");
+		var domain = link.getAttribute("data-domain");
+		if (!user || !domain) return;
+		var addr = user + "@" + domain;
+		link.setAttribute("href", "mailto:" + addr);
+		var label = $(".contact__email-text", link);
+		if (label) label.textContent = addr;
+	}
+
+	/* ----------------------------------------------------------
 	   Footer year
 	   ---------------------------------------------------------- */
 	var yEl = $("#year"); if (yEl) yEl.textContent = new Date().getFullYear();
@@ -364,6 +380,7 @@
 		initParallax();
 		initEthos();
 		initMenu();
+		initEmail();
 		updateProgress();
 		animateHero();
 	}

@@ -314,6 +314,7 @@ section{ position:relative; padding:clamp(5rem,12vh,11rem) var(--pad); max-width
 .counters{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; padding:2.4rem 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); margin-bottom:clamp(3rem,6vw,4.5rem); text-align:center; }
 .counter__num{ display:block; font-family:var(--font-display); font-weight:800; font-size:clamp(2.4rem,5vw,4rem); line-height:1;
 	background:linear-gradient(180deg,#fff,var(--gold)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.counter__num--text{ font-size:clamp(1.8rem,3.6vw,2.8rem); letter-spacing:-.01em; }
 .counter__label{ font-size:.74rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-dim); }
 
 .portfolio{ text-align:center; margin-bottom:1.4rem; }
