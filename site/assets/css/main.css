@@ -299,10 +299,15 @@ section{ position:relative; padding:clamp(5rem,12vh,11rem) var(--pad); max-width
 }
 .pillar:hover{ border-color:rgba(245,217,139,.4); }
 .pillar:hover::before{ opacity:1; }
-.pillar__icon{ width:46px; height:46px; margin-bottom:1.4rem; position:relative; }
-.pillar__icon::before, .pillar__icon::after{ content:""; position:absolute; inset:0; }
-.pillar[data-icon] .pillar__icon{ border:1px solid var(--gold); border-radius:12px; display:grid; place-items:center; box-shadow:0 0 20px -6px var(--gold); }
-.pillar__icon[data-icon="chain"]::before{ width:18px; height:18px; left:14px; top:14px; border:2px solid var(--gold); border-radius:50%; box-shadow:8px 0 0 -2px transparent, 8px 8px 0 0 var(--gold); }
+.pillar__icon{
+	width:50px; height:50px; margin-bottom:1.4rem;
+	display:grid; place-items:center; color:var(--gold);
+	border:1px solid rgba(245,217,139,.42); border-radius:14px;
+	box-shadow:0 0 24px -8px var(--gold), inset 0 0 0 1px rgba(245,217,139,.06);
+	transition:box-shadow .4s, transform .4s var(--ease);
+}
+.pillar:hover .pillar__icon{ box-shadow:0 0 32px -6px var(--gold); transform:translateY(-2px); }
+.pillar__icon svg{ width:26px; height:26px; fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
 .pillar h3{ font-family:var(--font-display); font-weight:700; font-size:1.35rem; margin-bottom:.6rem; }
 .pillar p{ color:var(--ink-soft); font-size:.95rem; }
 
