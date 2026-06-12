@@ -286,8 +286,9 @@ section{ position:relative; padding:clamp(5rem,12vh,11rem) var(--pad); max-width
 /* ---------- WORK ---------- */
 .work__intro{ max-width:60ch; margin-bottom:clamp(2.5rem,6vw,4.5rem); }
 .work__intro h2{ margin-bottom:1.2rem; }
-.pillars{ display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1rem,2vw,1.6rem); margin-bottom:clamp(3rem,7vw,5rem); }
+.pillars{ display:flex; flex-wrap:wrap; justify-content:center; gap:clamp(1rem,2vw,1.6rem); margin-bottom:clamp(3rem,7vw,5rem); }
 .pillar{
+	flex:1 1 300px; max-width:360px;
 	position:relative; padding:2rem 1.8rem 2.2rem; border-radius:18px;
 	background:linear-gradient(160deg, rgba(255,255,255,.045), rgba(255,255,255,.01));
 	border:1px solid var(--line); overflow:hidden; transform-style:preserve-3d;
