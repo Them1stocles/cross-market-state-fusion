@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+	<meta name="theme-color" content="#05060d" />
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2305060d'/%3E%3Cg fill='none' stroke='%23f5d98b' stroke-width='4'%3E%3Cpolygon points='50,16 84,42 50,86 16,42'/%3E%3Cline x1='16' y1='42' x2='84' y2='42'/%3E%3Cline x1='50' y1='16' x2='50' y2='86'/%3E%3C/g%3E%3C/svg%3E" />
+	<title>Trevor Chapman — Entrepreneur · DeFi · Angel Investor</title>
+	<meta name="description" content="Trevor Chapman — entrepreneur and angel investor in AI, blockchain, robotics, health tech, and frontier physics. Everything I build, I build for my family." />
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="Trevor Chapman" />
+	<meta property="og:description" content="Angel investor in AI, blockchain, robotics, health tech & frontier physics. Everything I build, I build for them." />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="images/intro.jpg" />
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="is-loading">
+
+	<!-- ============ PRELOADER ============ -->
+	<div class="preloader" id="preloader" aria-hidden="true">
+		<div class="preloader__inner">
+			<div class="preloader__mark">
+				<svg viewBox="0 0 100 100" class="gem" aria-hidden="true">
+					<polygon points="50,4 92,38 50,96 8,38" />
+					<polygon points="50,4 92,38 50,46 8,38" class="gem--top" />
+					<line x1="8" y1="38" x2="92" y2="38" />
+					<line x1="50" y1="4" x2="50" y2="46" />
+					<line x1="50" y1="46" x2="50" y2="96" />
+					<line x1="29" y1="20" x2="35" y2="38" />
+					<line x1="71" y1="20" x2="65" y2="38" />
+				</svg>
+			</div>
+			<div class="preloader__count"><span id="loadCount">0</span><i>%</i></div>
+			<div class="preloader__word">Entering the universe of Trevor&nbsp;Chapman</div>
+		</div>
+		<div class="preloader__curtain"></div>
+	</div>
+
+	<!-- ============ COSMIC BACKGROUND ============ -->
+	<canvas id="cosmos" class="cosmos" aria-hidden="true"></canvas>
+	<div class="grain" aria-hidden="true"></div>
+
+	<!-- ============ CUSTOM CURSOR ============ -->
+	<div class="cursor" id="cursor" aria-hidden="true">
+		<div class="cursor__dot"></div>
+		<div class="cursor__ring"></div>
+	</div>
+
+	<!-- ============ SCROLL PROGRESS + NAV ============ -->
+	<div class="progress" id="progress" aria-hidden="true"></div>
+
+	<header class="topbar" id="topbar">
+		<a href="#hero" class="brand" data-cursor="hover">
+			<svg viewBox="0 0 100 100" class="brand__gem" aria-hidden="true">
+				<polygon points="50,6 90,38 50,94 10,38" />
+				<line x1="10" y1="38" x2="90" y2="38" />
+				<line x1="50" y1="6" x2="50" y2="94" />
+			</svg>
+			<span class="brand__name">Trevor&nbsp;Chapman</span>
+		</a>
+		<nav class="nav" id="nav">
+			<a href="#universe" data-cursor="hover"><span>Universe</span></a>
+			<a href="#work" data-cursor="hover"><span>Work</span></a>
+			<a href="#ethos" data-cursor="hover"><span>Ethos</span></a>
+			<a href="#contact" data-cursor="hover"><span>Contact</span></a>
+		</nav>
+		<button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span></button>
+	</header>
+
+	<!-- side dot navigation -->
+	<aside class="dots" id="dots" aria-hidden="true">
+		<a href="#hero" class="dot is-active" data-label="Home"></a>
+		<a href="#universe" class="dot" data-label="Universe"></a>
+		<a href="#work" class="dot" data-label="Work"></a>
+		<a href="#ethos" class="dot" data-label="Ethos"></a>
+		<a href="#contact" class="dot" data-label="Contact"></a>
+	</aside>
+
+	<main id="scroll-root">
+
+		<!-- ============ HERO ============ -->
+		<section class="hero" id="hero">
+			<div class="hero__halo" data-parallax data-speed="-2"></div>
+			<div class="hero__inner">
+				<p class="hero__eyebrow reveal-up">Entrepreneur · DeFi · Angel Investor</p>
+				<h1 class="hero__title" aria-label="Trevor Chapman">
+					<span class="line"><span class="char-wrap" data-text="Trevor">Trevor</span></span>
+					<span class="line"><span class="char-wrap accent" data-text="Chapman">Chapman</span></span>
+				</h1>
+				<p class="hero__sub reveal-up">Backing the people building tomorrow — across <em>AI</em>, <em>blockchain</em>, <em>robotics</em>, <em>health&nbsp;tech</em>, and the <em>frontier of physics</em>. Driven by family, grounded by stoicism.</p>
+				<div class="hero__cta reveal-up">
+					<a href="#work" class="btn btn--primary magnetic" data-cursor="hover"><span>See the portfolio</span></a>
+					<a href="#contact" class="btn btn--ghost magnetic" data-cursor="hover"><span>Get in touch</span></a>
+				</div>
+			</div>
+			<a href="#universe" class="scroll-cue" data-cursor="hover" aria-label="Scroll down">
+				<span class="scroll-cue__text">Scroll</span>
+				<span class="scroll-cue__line"></span>
+			</a>
+		</section>
+
+		<!-- ============ UNIVERSE / INTRO ============ -->
+		<section class="universe" id="universe">
+			<div class="section-head">
+				<span class="section-index">01</span>
+				<span class="section-kicker">My Universe</span>
+			</div>
+			<div class="universe__grid">
+				<div class="universe__media" data-tilt data-parallax data-speed="1.5">
+					<div class="media-frame">
+						<img src="images/intro.jpg" alt="Trevor Chapman and his family" loading="lazy" />
+						<div class="media-frame__glow"></div>
+					</div>
+				</div>
+				<div class="universe__copy">
+					<h2 class="display reveal-words">Everything I build, I build for them.</h2>
+					<p class="lead reveal-up">Family is the unit everything else answers to — every venture, every frontier, every hour. I fell in love at 21, and I've been falling deeper each year since.</p>
+					<p class="reveal-up">We want our kids' identities rooted in experiences, work, and passions — not the brand of shoes they wear or the name on a $200 brick. So we support their dreams in every way we can.</p>
+					<p class="reveal-up">It's working out alright, so far. Our oldest son won an <strong>Emmy in 2021</strong> — two years after he told us he wanted to be an actor.</p>
+					<div class="stat-row reveal-up">
+						<div class="stat"><span class="stat__num">2021</span><span class="stat__label">Emmy, age 16</span></div>
+						<div class="stat"><span class="stat__num" data-count="21">0</span><span class="stat__label">Fell in love at</span></div>
+						<div class="stat"><span class="stat__num">∞</span><span class="stat__label">Falling deeper</span></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ============ WORK ============ -->
+		<section class="work" id="work">
+			<div class="section-head">
+				<span class="section-index">02</span>
+				<span class="section-kicker">The Work</span>
+			</div>
+			<div class="work__intro">
+				<h2 class="display reveal-words">I back the people building the future.</h2>
+				<p class="lead reveal-up">These days I'm primarily an angel investor in exciting startups — especially fascinated by where the next decade gets built.</p>
+			</div>
+
+			<div class="pillars">
+				<article class="pillar" data-tilt data-cursor="hover">
+					<div class="pillar__icon">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.7 4.8L18 9.5l-4.3 1.7L12 16l-1.7-4.8L6 9.5l4.3-1.7L12 3Z"/><path d="M18.5 15.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7.7-1.8Z"/></svg>
+					</div>
+					<h3>Artificial&nbsp;Intelligence</h3>
+					<p>Applied intelligence — the models and agents that compound what every other field can build.</p>
+				</article>
+				<article class="pillar" data-tilt data-cursor="hover">
+					<div class="pillar__icon">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 6v6c0 4.4 3.4 7.8 8 9 4.6-1.2 8-4.6 8-9V6l-8-4Z"/><path d="m8.5 12 2.5 2.5L16 9"/></svg>
+					</div>
+					<h3>Blockchain</h3>
+					<p>DeFi rails, digital ownership, and the financial infrastructure of an open economy.</p>
+				</article>
+				<article class="pillar" data-tilt data-cursor="hover">
+					<div class="pillar__icon">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 4v4M9 13h.01M15 13h.01M9 4h6"/><path d="M2 13v2M22 13v2"/></svg>
+					</div>
+					<h3>Robotics</h3>
+					<p>Autonomy and machines that extend what human hands and minds can reach.</p>
+				</article>
+				<article class="pillar" data-tilt data-cursor="hover">
+					<div class="pillar__icon">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2-5 3 9 2.5-6 1.5 2h5"/></svg>
+					</div>
+					<h3>Health&nbsp;Tech</h3>
+					<p>Biology as engineering — therapeutics and tools that lengthen and enrich life.</p>
+				</article>
+				<article class="pillar" data-tilt data-cursor="hover">
+					<div class="pillar__icon">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="1.6"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg>
+					</div>
+					<h3>Frontier&nbsp;Physics</h3>
+					<p>Space travel and quantum computing — the hard science quietly redrawing what's physically possible.</p>
+				</article>
+			</div>
+
+			<div class="counters reveal-up">
+				<div class="counter"><span class="counter__num" data-count="100" data-suffix="+">0</span><span class="counter__label">Ventures backed</span></div>
+				<div class="counter"><span class="counter__num" data-count="5" data-suffix="">0</span><span class="counter__label">Core frontiers</span></div>
+				<div class="counter"><span class="counter__num counter__num--text">Seed→Late</span><span class="counter__label">Stages backed</span></div>
+			</div>
+
+			<div class="portfolio reveal-up">
+				<p class="portfolio__label">Selected investments — seed to late stage</p>
+			</div>
+			<!-- marquees populated / enhanced by JS, but content is real -->
+			<div class="marquee" aria-label="Portfolio companies">
+				<div class="marquee__track">
+					<span>Pinterest</span><span>Airbnb</span><span>Palantir</span><span>PostMates</span><span>Circle</span><span>BitClout</span><span>BitMart</span><span>BitPay</span><span>Compound</span><span>Unsplash</span><span>Ripple</span><span>mParticle</span>
+					<span>Pinterest</span><span>Airbnb</span><span>Palantir</span><span>PostMates</span><span>Circle</span><span>BitClout</span><span>BitMart</span><span>BitPay</span><span>Compound</span><span>Unsplash</span><span>Ripple</span><span>mParticle</span>
+				</div>
+			</div>
+			<div class="marquee marquee--reverse" aria-hidden="true">
+				<div class="marquee__track">
+					<span>Compass Therapeutics</span><span>Safely</span><span>BillionToOne</span><span>Omaze</span><span>BIKRY</span><span>inSoma Bio</span><span>Senti Biosciences</span><span>VenoStent</span><span>dopay</span><span>Talyn Air</span><span>Opolis</span><span>Venus Aerospace</span><span>Corvus Robotics</span><span>Colossal</span><span>Boba Network</span><span>Kotani Pay</span>
+					<span>Compass Therapeutics</span><span>Safely</span><span>BillionToOne</span><span>Omaze</span><span>BIKRY</span><span>inSoma Bio</span><span>Senti Biosciences</span><span>VenoStent</span><span>dopay</span><span>Talyn Air</span><span>Opolis</span><span>Venus Aerospace</span><span>Corvus Robotics</span><span>Colossal</span><span>Boba Network</span><span>Kotani Pay</span>
+				</div>
+			</div>
+			<p class="portfolio__more reveal-up">…and <strong>50+ more</strong> founders chasing things that matter.</p>
+		</section>
+
+		<!-- ============ ETHOS / ABOUT ============ -->
+		<section class="ethos" id="ethos">
+			<div class="section-head">
+				<span class="section-index">03</span>
+				<span class="section-kicker">The Ethos</span>
+			</div>
+			<div class="ethos__words" aria-hidden="true">
+				<span class="ethos__word">Family.</span>
+				<span class="ethos__word">Mountaineer.</span>
+				<span class="ethos__word">Sailor.</span>
+				<span class="ethos__word">Jiu&#8209;Jitsu.</span>
+				<span class="ethos__word">Entrepreneur.</span>
+				<span class="ethos__word">Reader.</span>
+				<span class="ethos__word">Stoic.</span>
+			</div>
+			<p class="sr-only">Family. Mountaineer. Sailor. Jiu-Jitsu. Entrepreneur. Reader. Stoic.</p>
+			<div class="ethos__media" data-tilt data-parallax data-speed="1.2">
+				<div class="media-frame">
+					<img src="images/about.jpg" alt="Trevor Chapman and his son Jace" loading="lazy" />
+					<div class="media-frame__glow"></div>
+				</div>
+				<figcaption class="reveal-up">Words I try to live by.</figcaption>
+			</div>
+		</section>
+
+		<!-- ============ CONTACT ============ -->
+		<section class="contact" id="contact">
+			<div class="section-head">
+				<span class="section-index">04</span>
+				<span class="section-kicker">Connect</span>
+			</div>
+			<div class="contact__inner">
+				<h2 class="contact__title reveal-words">Let's build something <br/>worth the universe.</h2>
+				<!-- Email assembled by JS so the plaintext address never sits in the markup for scrapers. -->
+				<a href="#" class="contact__email magnetic" data-cursor="hover" id="emailLink" data-user="trevor" data-domain="trevorchapman.com" rel="nofollow">
+					<span class="contact__email-text">trevor <span aria-hidden="true">[at]</span> trevorchapman <span aria-hidden="true">[dot]</span> com</span>
+				</a>
+				<div class="socials">
+					<a href="https://www.twitter.com/jtrevorchapman" class="social magnetic" data-cursor="hover" aria-label="Twitter" target="_blank" rel="noopener">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg>
+						<span>X / Twitter</span>
+					</a>
+					<a href="https://www.instagram.com/jtrevorchapman" class="social magnetic" data-cursor="hover" aria-label="Instagram" target="_blank" rel="noopener">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zm0 3.68A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.41-10.4a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg>
+						<span>Instagram</span>
+					</a>
+					<a href="https://www.facebook.com/jtrevorchapman" class="social magnetic" data-cursor="hover" aria-label="Facebook" target="_blank" rel="noopener">
+						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+						<span>Facebook</span>
+					</a>
+				</div>
+			</div>
+			<footer class="footer">
+				<span>© <span id="year">2026</span> Trevor Chapman · iCreateRevenue&nbsp;LLC</span>
+				<span class="footer__made">Crafted among the stars ✦</span>
+			</footer>
+		</section>
+
+	</main>
+
+	<!-- Smooth-scroll enhancement (CDN) — site fully works without it -->
+	<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+	<script src="assets/js/cosmos.js" defer></script>
+	<script src="assets/js/main.js" defer></script>
+</body>
+</html>
